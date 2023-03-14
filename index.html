@@ -10,6 +10,7 @@
     <link rel="shortcut icon" href="./favicon.png">
     <link rel="stylesheet" href="./style.css">
     <link rel="manifest" href="./manifest.json">
+	<title>Filtered Word Bypasser</title>
 </head>
 
 <body>
@@ -21,12 +22,14 @@
     <main>
 		<div class="flex-container">
 			<label for="input-txt">Enter text to bypass:</label>
-			<textarea id="input-txt" name="input-txt" placeholder="Type Here..." rows=10></textarea>
+			<textarea id="input-txt" name="input-txt" placeholder="Type Here..." maxlength=4000 rows=10></textarea>
 			<button id="convert-btn" name="convert-btn">Convert</button>
-			<label for="result">Converted Text:</label>
-			<textarea id="result" name="result" rows=10 readonly></textarea>
+			<label for="result-txt">Converted Text:</label>
+			<textarea id="result-txt" name="result-txt" rows=10  maxlength=4000 readonly></textarea>
 		</div>
     </main>
+	
+	<script src="./script.js"></script>
 </body>
 
 </html>
