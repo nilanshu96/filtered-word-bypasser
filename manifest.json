@@ -1,0 +1,14 @@
+{
+  "name": "Filtered Word Bypasser",
+  "short_name": "Word Bypasser",
+  "start_url": ".",
+  "display": "standalone",
+  "description": "For bypassing words Filtered by bots like automod",
+  "icons": [
+    {
+      "src": "icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

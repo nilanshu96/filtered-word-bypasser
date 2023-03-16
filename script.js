@@ -1,3 +1,18 @@
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('./service-worker.js', { scope: './' })
+        .then(function (reg) {
+            if (reg.installing) {
+                console.log('service worker is installing');
+            } else if (reg.waiting) {
+                console.log('service worker has installed');
+            } else if (reg.active) {
+                console.log('service worker is active');
+            }
+        }).catch(function (err) {
+            console.log('registration failed with ' + err);
+        })
+}
+
 let inputTxt = document.getElementById("input-txt");
 let resultTxt = document.getElementById("result-txt");
 let convertBtn = document.getElementById("convert-btn");
