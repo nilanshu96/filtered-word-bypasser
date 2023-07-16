@@ -16,9 +16,12 @@ if ('serviceWorker' in navigator) {
 let inputTxt = document.getElementById("input-txt");
 let resultTxt = document.getElementById("result-txt");
 let convertBtn = document.getElementById("convert-btn");
+const successNotif = document.getElementById("success");
+const failNotif = document.getElementById("failed");
 
 const bypassMap = new Map();
 
+//substitute English letters with same looking Cyrillic letters
 bypassMap.set("A", "А");
 bypassMap.set("a", "а");
 bypassMap.set("B", "В");
@@ -41,6 +44,10 @@ bypassMap.set("U", "U");
 bypassMap.set("u", "u");
 
 function convert() {
+
+    successNotif.style.setProperty("display", "none");
+    failNotif.style.setProperty("display", "none");
+
 	let inputStr = inputTxt.value;
 	let result = "";
 	
@@ -51,6 +58,12 @@ function convert() {
 			result += letter;
 		}
 	}
+
+    if (inputStr !== result) {
+        successNotif.style.setProperty("display", "block");
+    } else {
+        failNotif.style.setProperty("display", "block");
+    }
 	
 	resultTxt.value = result;
 }
