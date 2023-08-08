@@ -45,11 +45,21 @@ h1 {
 	font-size: 1.1em;
 }
 
-.flex-container > label {
+.flex-container > .textarea-label {
 	margin-bottom: 5px;
 	color: #ffddff;
 	font-size: 1.2em;
 	font-weight: 700;
+}
+
+.options-container {
+	margin-top: 7px;
+}
+
+.options-label {
+	width: fit-content;
+	margin-right: 8px;
+	font-weight: lighter;
 }
 
 .notif {
@@ -58,6 +68,16 @@ h1 {
 	padding: 3px 0px;
 	margin-top: 5px;
 	display: none;
+}
+
+.dropdown {
+	width: fit-content;
+	border: none;
+	background-color: #eed;
+}
+
+.dropdown:hover {
+	background-color: #ddc;
 }
 
 #success {
