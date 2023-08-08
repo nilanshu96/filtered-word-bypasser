@@ -12,8 +12,6 @@ mdsExceptionMap.set('Q', 'ℚ');
 mdsExceptionMap.set('R', 'ℝ');
 mdsExceptionMap.set('Z', 'ℤ');
 
-const inp = "I love X!";
-
 const XfyString = function(str) {
     let strOut = "";
     for(const char of str) {
@@ -41,5 +39,3 @@ const XfyCharacter = function(char) {
 
     return outChar;
 }
-
-console.log(XfyString(inp));

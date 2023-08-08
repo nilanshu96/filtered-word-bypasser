@@ -74,6 +74,7 @@ h1 {
 	width: fit-content;
 	border: none;
 	background-color: #eed;
+	padding: 5px 10px;
 }
 
 .dropdown:hover {
