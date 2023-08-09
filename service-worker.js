@@ -1,4 +1,4 @@
-const CACHE_NAME = "v3";
+const CACHE_NAME = "v3.1";
 
 //installs the service worker which then saves the files used by the game into the cache
 self.addEventListener('install', event => {
