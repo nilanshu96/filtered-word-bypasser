@@ -84,14 +84,18 @@ h1 {
 	animation: fadeIn 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 	border: 1px solid rgba(36, 241, 6, 0.46);
     background-color: rgba(7, 149, 66, 0.12156862745098039);
-	color: #0ad406;
+	color: #a1e7a0;
+	padding: 5px 0px;
+	font-family: 'Courier New', Courier, monospace;
 }
 
 #failed {
 	animation: fadeIn 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 	border: 1px solid rgba(241, 6, 6, 0.81);
     background-color: rgba(220, 17, 1, 0.16);
-	color: #ff0303;
+	color: #f1d1d1;
+	padding: 5px 0px;
+	font-family: 'Courier New', Courier, monospace;
 }
 
 @media (max-aspect-ratio: 9/16) {

@@ -63,8 +63,15 @@ function convert() {
     successNotif.style.setProperty("display", "none");
     failNotif.style.setProperty("display", "none");
 
-	let inputStr = inputTxt.value;
+	let inputStr = inputTxt.value.trim();
     let result = inputStr;
+
+    if(!inputStr) {
+        resultTxt.value = "";
+        failNotif.textContent = NO_INPUT_ERROR;
+        failNotif.style.setProperty("display", "block");
+        return;
+    }
 	
     if(options.value === "iden") {
         result = convertIdentical(inputStr);
@@ -75,6 +82,7 @@ function convert() {
     if (inputStr !== result) {
         successNotif.style.setProperty("display", "block");
     } else {
+        failNotif.textContent = GENERAL_FAIL;
         failNotif.style.setProperty("display", "block");
     }
 	

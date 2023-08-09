@@ -21,7 +21,7 @@
 	<main>
 		<div class="flex-container">
 			<label class="textarea-label" for="input-txt">Enter text to bypass:</label>
-			<textarea id="input-txt" name="input-txt" placeholder="Type Here..." maxlength=4000 rows=15></textarea>
+			<textarea id="input-txt" name="input-txt" placeholder="Type Here..." maxlength=4000 rows=15 required></textarea>
 			<div class="options-container">
 				<label class="options-label" for="options">Conversion Options: </label>
 				<select name="options" id="options" class="dropdown">
@@ -33,10 +33,11 @@
 			<label class="textarea-label" class="textarea-label" for="result-txt">Converted Text:</label>
 			<textarea id="result-txt" name="result-txt" rows=15  maxlength=4000 readonly></textarea>
 			<div class="notif" id="success">Text converted successfully</div>
-			<div class="notif" id="failed">Failed to convert text. Couldn't find replacement for any letter in the given text with an exactly same looking letter in UTF-8.</div>
+			<div class="notif" id="failed"></div>
 		</div>
 	</main>
 	
+	<script src="./constants.js"></script>
 	<script src="./convert_DS.js"></script>
 	<script src="./script.js"></script>
 </body>
