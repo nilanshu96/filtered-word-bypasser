@@ -24,25 +24,34 @@ const bypassMap = new Map();
 
 //substitute English letters with same looking Cyrillic letters
 bypassMap.set("A", "А");
-bypassMap.set("a", "а");
 bypassMap.set("B", "В");
+bypassMap.set("C", "С");
 bypassMap.set("E", "Е");
-bypassMap.set("e", "е");
+bypassMap.set("H", "Н");
+bypassMap.set("I", "Ι");
+bypassMap.set("J", "Ј");
 bypassMap.set("K", "К");
 bypassMap.set("M", "М");
-bypassMap.set("H", "Н");
+bypassMap.set("N", "Ν");
 bypassMap.set("O", "О");
-bypassMap.set("o", "о");
 bypassMap.set("P", "Р");
-bypassMap.set("p", "р");
-bypassMap.set("C", "С");
-bypassMap.set("c", "с");
+bypassMap.set("S", "Ѕ");
 bypassMap.set("T", "Т");
-bypassMap.set("y", "y");
 bypassMap.set("X", "Х");
+bypassMap.set("Y", "Υ");
+bypassMap.set("Z", "Ζ");
+bypassMap.set("a", "а");
+bypassMap.set("c", "с");
+bypassMap.set("d", "ԁ");
+bypassMap.set("e", "е");
+bypassMap.set("h", "һ");
+bypassMap.set("i", "і");
+bypassMap.set("j", "ϳ");
+bypassMap.set("o", "о");
+bypassMap.set("p", "р");
+bypassMap.set("s", "ѕ");
 bypassMap.set("x", "х");
-bypassMap.set("U", "U");
-bypassMap.set("u", "u");
+bypassMap.set("y", "у");
 
 function convertIdentical(inputStr) {
     let result = "";
