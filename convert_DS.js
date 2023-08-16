@@ -1,7 +1,9 @@
 const small_A_CP = 97; const small_Z_CP = 122;
 const capital_A_CP = 65; const capital_Z_CP = 90;
+const zero = 48; const nine = 57;
 const mds_small_A_CP = 120146; //mds = Mathematical Double Struck
 const mds_capital_A_CP = 120120;
+const mds_zero = 120792;
 
 const mdsExceptionMap = new Map();
 mdsExceptionMap.set('C', 'ℂ');
@@ -35,6 +37,9 @@ const XfyCharacter = function(char) {
             const diff = charCP - capital_A_CP;
             outChar = String.fromCodePoint(mds_capital_A_CP + diff);
         }
+    } else if(charCP >= zero && charCP <= nine) {
+        const diff = charCP - zero;
+        outChar = String.fromCodePoint(mds_zero + diff);
     }
 
     return outChar;
